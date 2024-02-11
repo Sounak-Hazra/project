@@ -1,0 +1,122 @@
+<Button>:
+    size_hint:0.2,0.2
+<Floatlayout>:
+    background_color:(1, 1, 1, 1)
+    Button:
+        id:first_player_score
+        text:"First Player Score : 0"
+        size_hint:0.3,0.1
+        pos_hint:{"x":0.19,"y":0.8}
+        font_size:27
+        bold:True
+        color:(1, 1, 1, 1)
+        background_color:(0,0,0,1)
+    Button:
+        id:second_player_score
+        text:"Second Player Score : 0"
+        size_hint:0.3,0.1
+        pos_hint:{"x":0.515,"y":0.8}
+        font_size:27
+        bold:True
+        color:(1, 1, 1, 1)
+        background_color:(0,0,0,1)
+    Button:
+        id:drawn_button
+        text:"Drawn games :0"
+        size_hint:0.3,0.1
+        pos_hint:{"x":0.21,"y":0.1}
+        font_size:27
+        bold:True
+        color:(1, 1, 1, 1)
+        background_color:(0,0,0,1)
+    Button:
+        id:next_match_button
+        text:"Tap For Next Match"
+        size_hint:0.3,0.1
+        pos_hint:{"x":0.51,"y":0.1}
+        on_release:root.all_clear(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        font_size:27
+        bold:True
+        color:(1, 1, 1, 1)
+        background_color:(1,0,0,1)
+    Button:
+        id:firstbutton
+        pos_hint:{"x":0.21,"y":0.6}
+        on_press: root.change_text(self,firstbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0)  
+        font_size:70
+        bold:True
+    Button:
+        id:secondbutton
+        text:""
+        pos_hint:{"x":.41,"y":0.6}
+        on_press: root.change_text(self,secondbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:thirdbutton
+        text:""
+        pos_hint:{"x":.61,"y":0.6}
+        on_press: root.change_text(self,thirdbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:fourthbutton
+        text:""
+        pos_hint:{"x":.21,"y":0.4}
+        on_press: root.change_text(self,fourthbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:fifthbutton
+        text:""
+        pos_hint:{"x":.41,"y":0.4}
+        on_press: root.change_text(self,fifthbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:sixthbutton
+        text:""
+        pos_hint:{"x":.61,"y":0.4}
+        on_press: root.change_text(self,sixthbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:seventhbutton
+        text:""
+        pos_hint:{"x":.21,"y":0.2}
+        on_press: root.change_text(self,seventhbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:eighthbutton
+        text:""
+        pos_hint:{"x":.41,"y":0.2}
+        on_press: root.change_text(self,eighthbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+    Button:
+        id:ninthbutton
+        text:""
+        pos_hint:{"x":.61,"y":0.2}
+        on_press: root.change_text(self,ninthbutton)
+        on_release: root.whowin(self,firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton,seventhbutton,eighthbutton,ninthbutton,first_player_score,second_player_score,drawn_button)
+        background_color:(0.0, 0.8, 1.0, 1.0) 
+        font_size:70
+        bold:True
+
